@@ -1,5 +1,5 @@
 // Start your implementation here
-function extractNumber(bstring){
+const extractNumber = (bstring) => {
 	var i;
   for(i=bstring.length-1; i>=0; i--)
   {
@@ -14,7 +14,7 @@ const checkNumber = (n) => Number(n) == n;
 
 const findNextNumber =(extractNum) => parseInt(extractNum) + 1; 
 
-function bizarreStringIncrementer(bizString){
+const bizarreStringIncrementer = (bizString) => {
 var bizareStr, bstring = bizString.toString();
 var leadingNumbers = extractNumber(bstring);
 if(leadingNumbers == "")
