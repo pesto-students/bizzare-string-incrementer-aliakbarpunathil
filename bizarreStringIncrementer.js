@@ -10,13 +10,9 @@ function extractNumber(bstring){
   return bstring.substring(i+1, bstring.length);
 }
 
-function checkNumber(n){
-    return Number(n) == n;
-}
+const checkNumber = (n) => Number(n) == n; 
 
-function findNextNumber(extractNum){
-	return parseInt(extractNum) + 1;
-}
+const findNextNumber =(extractNum) => parseInt(extractNum) + 1; 
 
 function bizarreStringIncrementer(bizString){
 var bizareStr, bstring = bizString.toString();
